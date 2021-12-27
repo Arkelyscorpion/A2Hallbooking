@@ -10,18 +10,24 @@ class BasicDetails : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_basic_details)
 
-        val button = findViewById<Button>(R.id.button2)
+        val nextButton = findViewById<Button>(R.id.button2)
+        val backButton = findViewById<Button>(R.id.button3)
 
         /*
         operations to be performed
         when user tap on the button
         */
-        button?.setOnClickListener()
+        nextButton?.setOnClickListener()
         {
             //intent is used to link one page to another
             val intent = Intent(this, SecondaryDetails::class.java)
             // start your next activity
             startActivity(intent)          }
+
+        backButton?.setOnClickListener(){
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 }

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.A2Hall">
         <activity
+            android:name=".ThirdPage"
+            android:exported="true" />
+        <activity
             android:name=".SecondaryDetails"
             android:exported="false" />
         <activity
