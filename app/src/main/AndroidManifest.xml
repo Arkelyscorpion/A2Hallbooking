@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.A2Hall">
         <activity
+            android:name=".SecondaryDetails"
+            android:exported="false" />
+        <activity
             android:name=".BasicDetails"
             android:exported="true" />
         <activity
